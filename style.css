@@ -61,3 +61,7 @@ label {
   background-color: #333366;
   border: 2px solid aliceblue;
 }
+.img {
+  max-width: 50%;
+  max-height: 100%;
+}
