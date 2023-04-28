@@ -63,32 +63,47 @@ label {
 }
 .meme-container {
   position: relative;
+
+  width: 600px;
+  height: 600px;
+  margin: auto;
+}
+.meme-img-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .img {
   display: block;
-  max-width: 50%;
-  max-height: 100%;
-  margin: 30px auto;
+  width: 600px;
+  height: 600px;
+  margin-top: 30px;
+  object-fit: contain;
 }
-.msg-div {
-  position: relative;
-}
-.top-text {
+.top-msg-div,
+.bottom-msg-div {
   position: absolute;
-  bottom: 70%;
-  left: 35%;
-  color: white;
-  font-size: 2rem;
-  white-space: nowrap;
 }
-.bottom-text {
-  position: absolute;
-  bottom: 20px;
-  left: 35%;
+.top-msg-div {
+  top: 16%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  font-size: 50px;
   color: white;
-  font-size: 2rem;
-  white-space: nowrap;
 }
-/* .remove-btn {
-position: 
-} */
+.bottom-msg-div {
+  bottom: 16%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+  font-size: 50px;
+  color: white;
+}
+
+.remove-btn {
+}
