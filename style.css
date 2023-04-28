@@ -61,15 +61,34 @@ label {
   background-color: #333366;
   border: 2px solid aliceblue;
 }
+.meme-container {
+  position: relative;
+}
 .img {
   display: block;
   max-width: 50%;
   max-height: 100%;
   margin: 30px auto;
-  /* margin-top: 30px;
-  margin-left: ; */
+}
+.msg-div {
+  position: relative;
 }
 .top-text {
+  position: absolute;
+  bottom: 70%;
+  left: 35%;
+  color: white;
+  font-size: 2rem;
+  white-space: nowrap;
 }
 .bottom-text {
+  position: absolute;
+  bottom: 20px;
+  left: 35%;
+  color: white;
+  font-size: 2rem;
+  white-space: nowrap;
 }
+/* .remove-btn {
+position: 
+} */

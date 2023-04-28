@@ -10,21 +10,31 @@ submitBtn.addEventListener("click", function (e) {
   //create the div
   const newDiv = document.createElement("div");
   const memeImg = document.createElement("img");
-  const topMsg = document.createElement("p");
-  const bottomMsg = document.createElement("p");
+  const topMsgDiv = document.createElement("div");
+  const topMsg = document.createElement("div");
+  const bottomMsgDiv = document.createElement("div");
+  const bottomMsg = document.createElement("div");
+  const removeBtnDiv = document.createElement("div");
+  const removeBtn = document.createElement("button");
   memeContainer.append(newDiv);
   memeImg.setAttribute("type", "src");
   memeImg.classList.add("img");
   memeImg.src = imageUrl.value;
   newDiv.append(memeImg);
+  newDiv.append(topMsgDiv);
+  newDiv.append(bottomMsgDiv);
+  topMsgDiv.classList.add("msg-div");
+  bottomMsgDiv.classList.add("msg-div");
   topMsg.classList.add("top-text");
   bottomMsg.classList.add("bottom-text");
+  removeBtnDiv.classList.add("meme-container");
+  removeBtn.classList.add("remove-btn");
   topMsg.innerText = topText.value;
   bottomMsg.innerText = bottomText.value;
-  newDiv.append(topMsg);
-  newDiv.append(bottomMsg);
-  console.log(topMsg);
-  console.log(bottomMsg);
+  removeBtn.innerText = "Delete your meme";
+  topMsgDiv.append(topMsg);
+  bottomMsgDiv.append(bottomMsg);
+  removeBtnDiv.append(removeBtn);
   form.reset();
 });
 // }
