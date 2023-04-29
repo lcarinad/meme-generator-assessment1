@@ -32,13 +32,14 @@ submitBtn.addEventListener("click", function (e) {
   topMsgDiv.classList.add("top-msg-div");
   bottomMsgDiv.classList.add("bottom-msg-div");
 
-  removeBtnDiv.classList.add("meme-container");
+  removeBtnDiv.classList.add("remove-btn-div");
   removeBtn.classList.add("remove-btn");
   topMsgDiv.innerText = topText.value;
   bottomMsgDiv.innerText = bottomText.value;
   removeBtn.innerText = "Delete your meme";
-
+  newDiv.append(removeBtnDiv);
   removeBtnDiv.append(removeBtn);
+  console.log("removebtn");
   form.reset();
 });
 // }
