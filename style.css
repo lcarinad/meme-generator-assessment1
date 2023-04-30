@@ -85,8 +85,8 @@ label {
 }
 .top-msg-div,
 .bottom-msg-div {
-  /* position: relative; */
   position: absolute;
+  font-family: "Bebas Neue", cursive;
 }
 .top-msg-div {
   top: 20%;
@@ -108,5 +108,23 @@ label {
 }
 .remove-btn-div {
   position: absolute;
-  bottom: 10%;
+  bottom: -2em;
+}
+.remove-btn {
+  padding: 10px;
+  background-color: #eb4d55;
+  font-family: "Raleway", sans-serif;
+  color: aliceblue;
+  border-radius: 10px;
+
+  font-size: 1em;
+  width: 11em;
+  border: 1px solid #333366;
+  transition: all 200ms ease;
+}
+.remove-btn:hover {
+  cursor: pointer;
+  color: aliceblue;
+  background-color: #ff9800;
+  border: 2px solid aliceblue;
 }
