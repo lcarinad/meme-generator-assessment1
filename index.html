@@ -12,6 +12,16 @@
     <link
       rel="stylesheet"
       href="style.css" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bruno+Ace&family=Raleway:wght@300;400;500&display=swap"
+      rel="stylesheet" />
   </head>
   <body>
     <form id="form">
@@ -25,10 +35,12 @@
             id="image-url"
             class="form-input"
             type="url"
+            placeholder="Paste the link to your meme image"
             required />
         </div>
         <div class="form-group">
           <label for="optional-top-text-input">Text on Top</label>
+          <input
             id="optional-top-text-input"
             class="form-input"
             type="text"
@@ -45,11 +57,15 @@
         <div class="form-group">
           <label for="submit-button"></label>
           <input
+            id="submit-btn"
             class="submit-button"
             type="submit" />
         </div>
       </section>
     </form>
+    <div
+      id="meme-div"
+      class="meme-container"></div>
     <script src="app.js"></script>
   </body>
 </html>
